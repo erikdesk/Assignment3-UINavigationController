@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vm2-ze-82G">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Doorway-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_door" translatesAutoresizingMaskIntoConstraints="NO" id="HGB-v7-kRj">
+                                <rect key="frame" x="26.5" y="140" width="361" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HGB-v7-kRj" secondAttribute="height" multiplier="1:1" id="txE-T1-jg6"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lRJ-0H-06C">
+                                <rect key="frame" x="134.5" y="517" width="145" height="216.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaU-oL-gtK">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Coat Room">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jr4-4w-qdd" kind="show" id="sKH-G0-TzA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="958-XH-1Oa">
+                                        <rect key="frame" x="0.0" y="75.5" width="145" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="222222">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeM-24-kdU">
+                                        <rect key="frame" x="0.0" y="151" width="145" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="3333">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OeM-24-kdU" firstAttribute="height" secondItem="TaU-oL-gtK" secondAttribute="height" id="1Cx-vy-4HL"/>
+                                    <constraint firstItem="958-XH-1Oa" firstAttribute="height" secondItem="TaU-oL-gtK" secondAttribute="height" id="96Q-q9-W0I"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HGB-v7-kRj" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="DAS-0K-z9j"/>
+                            <constraint firstItem="HGB-v7-kRj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LXm-Wr-oVm"/>
+                            <constraint firstItem="lRJ-0H-06C" firstAttribute="top" secondItem="HGB-v7-kRj" secondAttribute="bottom" constant="16" id="Rg0-XS-YYz"/>
+                            <constraint firstItem="lRJ-0H-06C" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="XKI-vF-cb5"/>
+                            <constraint firstItem="HGB-v7-kRj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="idC-H2-0nb"/>
+                            <constraint firstItem="lRJ-0H-06C" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="krc-1R-t47"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Doorway" id="1Ha-Hb-N79"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.31884057971024" y="375"/>
+        </scene>
+        <!--Doorway-->
+        <scene sceneID="vgZ-3U-Iua">
+            <objects>
+                <viewController id="jr4-4w-qdd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6q-tg-aFW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_door" translatesAutoresizingMaskIntoConstraints="NO" id="Zxn-ep-L8K">
+                                <rect key="frame" x="26.5" y="140" width="361" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zxn-ep-L8K" secondAttribute="height" multiplier="1:1" id="5QS-vv-fkK"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YfO-fH-v8D">
+                                <rect key="frame" x="134.5" y="517" width="145" height="216.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqg-n7-evW">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Coat Room">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3V-Jg-B0V">
+                                        <rect key="frame" x="0.0" y="75.5" width="145" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="222222">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-v6-Gz7">
+                                        <rect key="frame" x="0.0" y="151" width="145" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="3333">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fXR-v6-Gz7" firstAttribute="height" secondItem="Gqg-n7-evW" secondAttribute="height" id="fOq-eR-H7I"/>
+                                    <constraint firstItem="k3V-Jg-B0V" firstAttribute="height" secondItem="Gqg-n7-evW" secondAttribute="height" id="ibF-gM-kHh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E4g-w3-gKp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YfO-fH-v8D" firstAttribute="height" secondItem="E4g-w3-gKp" secondAttribute="height" multiplier="0.3" id="5de-Nk-XYr"/>
+                            <constraint firstItem="Zxn-ep-L8K" firstAttribute="top" secondItem="E4g-w3-gKp" secondAttribute="top" id="8RA-0U-MLP"/>
+                            <constraint firstItem="YfO-fH-v8D" firstAttribute="centerX" secondItem="E4g-w3-gKp" secondAttribute="centerX" id="G9e-zS-ahR"/>
+                            <constraint firstItem="Zxn-ep-L8K" firstAttribute="centerX" secondItem="E4g-w3-gKp" secondAttribute="centerX" id="TuA-aA-rVT"/>
+                            <constraint firstItem="Zxn-ep-L8K" firstAttribute="height" secondItem="E4g-w3-gKp" secondAttribute="height" multiplier="0.5" id="VBx-kO-wyp"/>
+                            <constraint firstItem="YfO-fH-v8D" firstAttribute="top" secondItem="Zxn-ep-L8K" secondAttribute="bottom" constant="16" id="XHr-Bw-xBJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Doorway" id="ruS-A6-tFg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GK5-O2-FQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="1098"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wQC-2i-3SA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vm2-ze-82G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="i58-5E-T8e">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="01J-lp-oVM" kind="relationship" relationship="rootViewController" id="Whh-RC-RIX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rU-JP-Kor" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="front_door" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
